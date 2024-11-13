@@ -1,0 +1,9 @@
+body {
+    background-color: aquamarine;
+}
+
+#divList {
+    width: 25rem;
+    height: 8rem;
+    background-color: white;
+}
