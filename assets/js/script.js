@@ -44,7 +44,7 @@ function ToDoList () {
         remove.setAttribute("type", "button");
         remove.setAttribute("onclick", `deleteItem(${i})`);
         remove.innerText = "❌";
-        li.setAttribute("onclick", `strike(${i})`);
+        li.addEventListener("click", function(){li.classList.toggle("sbarrato");});
         list.appendChild(li);
         li.appendChild(remove);
         
@@ -56,9 +56,4 @@ function ToDoList () {
 function deleteItem (i) {
     array.splice(i, 1);
     ToDoList();
-}
-
-
-function strike(i) {
-    //array[i].style.color = "red";
 }
