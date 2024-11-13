@@ -4,6 +4,7 @@ const formToDoList = document.getElementById("toDoList");
 const btnAdd = document.getElementById("add");
 const list = document.getElementById("list");
 const array = [];
+let li;
 
 
 //Funzione di init
@@ -37,12 +38,13 @@ function insertArray () {
 function ToDoList () {
     list.innerHTML = "";
     for(let i=0; i < array.length; i++){
-        const li = document.createElement("li");
+        li = document.createElement("li");
         li.innerText = array[i];
         const remove = document.createElement("button");
         remove.setAttribute("type", "button");
         remove.setAttribute("onclick", `deleteItem(${i})`);
-        remove.innerText = "❌"
+        remove.innerText = "❌";
+        li.setAttribute("onclick", `strike(${i})`);
         list.appendChild(li);
         li.appendChild(remove);
         
@@ -53,11 +55,12 @@ function ToDoList () {
 //Fuzione di rimozione dell'elemento
 function deleteItem (i) {
     array.splice(i, 1);
-    ToDoList ();
+    ToDoList();
 }
 
 
-//
-li.addEventListener("click", function () {
-    
-});
+//Funzione per sbarrare
+function strike() {
+    li.style.textDecoration= "line-through";
+    ToDoList();
+}

@@ -3,7 +3,19 @@ body {
 }
 
 #divList {
-    width: 25rem;
-    height: 8rem;
+    width: 30rem;
     background-color: white;
+    margin: auto;
+    margin-top: 25rem;
+    
+}
+
+#divList {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#list {
+    list-style-type: none;
 }
