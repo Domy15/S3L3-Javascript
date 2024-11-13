@@ -59,8 +59,6 @@ function deleteItem (i) {
 }
 
 
-//Funzione per sbarrare
-function strike() {
-    li.style.textDecoration= "line-through";
-    ToDoList();
+function strike(i) {
+    //array[i].style.color = "red";
 }
