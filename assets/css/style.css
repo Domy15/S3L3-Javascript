@@ -4,16 +4,13 @@ body {
 
 #divList {
     width: 30rem;
-    background-color: white;
+    background-color: aquamarine;
     margin: auto;
     margin-top: 25rem;
-    
-}
-
-#divList {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    border-radius: 5%;
 }
 
 #list {
@@ -22,4 +19,8 @@ body {
 
 .sbarrato {
     text-decoration: line-through;
+}
+
+input {
+    border: none;
 }

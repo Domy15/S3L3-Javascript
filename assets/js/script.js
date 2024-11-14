@@ -44,13 +44,13 @@ function ToDoList () {
         remove.setAttribute("type", "button");
         remove.setAttribute("onclick", `deleteItem(${i})`);
         remove.innerText = "❌";
-        li.addEventListener("click", function(){li.classList.toggle("sbarrato");});
         list.appendChild(li);
         li.appendChild(remove);
         
     }
+    const li1 = document.querySelectorAll("li");
+    li1.addEventListener("click", function () {li1.classList.toggle("sbarrato");});
 }
-
 
 //Fuzione di rimozione dell'elemento
 function deleteItem (i) {
